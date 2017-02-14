@@ -1,0 +1,334 @@
+/*
+Theme Name: idowebservices
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+
+/*
+Customized Material styles
+*/
+
+nav#site-navigation {
+    background-color: #fff;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 5px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+nav .brand-logo {
+    color: #333;
+    left: 120px;
+}
+
+nav ul li a {
+    color: #333;
+}
+
+
+/*-----------------------------Pages ----------------------------*/
+
+
+/*
+** Home Page Styles
+*/
+
+section#hero {
+    background: url(assets/img/desk_003.jpg) 50% 25% no-repeat scroll;
+    background-size: cover;
+    min-height: 550px;
+    padding: 50px;
+    text-align: center;
+}
+
+#hero .title-wrap {
+    margin-top: 0;
+    border: 1px solid white;
+    padding: 50px;
+    color: #fff;
+}
+
+#ido {
+    width: 150px;
+    height: auto;
+    position: relative;
+    top: 50px;
+    border: 3px solid white;
+    box-shadow: 0px 11px 5px -6px rgba(0, 0, 0, 0.75);
+    font-size: 7rem;
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px;
+}
+
+#hero h1 {
+    font-size: 3.5em;
+}
+
+#hero h1 small {
+    font-size: 70%;
+}
+
+#optin {
+    background: url('assets/img/Rocket_Ship_Wide.png') no-repeat fixed center center;
+    background-size: cover;
+    padding: 30px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+#optin p.lead {
+    font-size: 2.3em;
+    color: #fff;
+}
+
+#optin.optin-btn {
+    padding: 20px;
+}
+
+#optin .btn {
+    font-size: 2.1em;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+#services-container .service-wrap {
+    margin: 0;
+}
+
+#service-icon-left,
+#service-icon-right {
+    padding-top: 100px;
+    background: #333;
+    color: #fff;
+    height: 478px;
+}
+
+#service-text-right {
+    padding: 0 15px 0 0;
+}
+
+
+/*.service-wrap{
+    margin-bottom: 0;
+}
+.service-wrap:after {
+	content: none;
+}*/
+
+.ido-services {
+    margin-bottom: 0;
+}
+
+.col.service-img {
+    padding-top: 45px;
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.service-img a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul.collection {
+    border: none;
+}
+
+.collection .collection-item.avatar {
+    border-bottom: none;
+}
+
+.collection .collection-item.avatar i.circle {
+    background: #fff;
+    font-size: 3rem;
+    border-radius: 0;
+}
+
+.progress {
+    height: 30px;
+    background-color: #fff;
+}
+
+
+/*****
+**Index (main Blog) page
+*****
+*/
+
+div.entry-content {
+    margin-top: 0;
+}
+
+h3.entry-title {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/*
+* Blog posts styles
+**/
+
+section#blog-page-title {
+    min-height: 350px;
+    background: url(assets/img/desk_003.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    margin-top: -25px;
+    padding: 50px;
+}
+
+#blog-page-title h1 {
+    color: #fff;
+}
+
+.post-wrapp {
+    min-height: 350px;
+    margin-top: 25px;
+}
+
+.widget {
+    padding: 20px;
+}
+
+.widget h4 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: solid 1px #ddd;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul li {
+    margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+    position: relative;
+    left: 1px;
+}
+
+
+/*comment **/
+
+.post-comments-badge {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -65px;
+    border: none;
+    border-radius: 100%;
+    background: #79b044;
+    text-align: center;
+    display: table;
+}
+
+.post-comments-badge a {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+    background: #8bc653;
+}
+
+#comments h3 {
+    text-align: center;
+}
+
+#comments h4 {
+    font-size: 1.3em;
+}
+
+#comments ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#comments ol li {
+    background-attachment: rgba(0, 0, 0, 0.02);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.03);
+}
+
+#comments ol li ol.children {
+    padding: 0;
+    list-style: none;
+    font-size: 0.96em;
+}
+
+#leave-comment {
+    margin: 40px 00;
+    padding: 20px 0 0;
+    border-top: solid 1px #eee;
+}
+
+
+/* Specific WordPress Comment Styles ****/
+
+#comments footer {
+    background: none;
+    color: inherit;
+}
+
+#comments footer a {
+    color: inherit;
+}
+
+#comments .comment-metdata {
+    margin: 10px 0 0;
+}
+
+
+/*
+*****Site Footer *****
+*/
+
+.site-info {
+    text-align: center;
+}
+
+#myModal.modal {
+    max-height: 90%;
+}
+
+
+/*
+*****Media Queries
+*/
+
+@media only screen and (max-width: 767px) {
+    #service-icon-left,
+    #service-icon-right {
+        display: none;
+    }
+}
